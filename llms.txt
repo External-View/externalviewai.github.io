@@ -1,13 +1,15 @@
 # External View
 
-> External View is the AI platform for third-party management — the intelligence layer for external affairs teams. It helps organizations track partner performance, spend accountability, and organization relationships in one place, so teams never have to wonder if a third-party relationship is delivering results.
+> External View is the AI platform for third-party management, the intelligence layer for external affairs teams. It turns the emails, calls, meetings, and spend behind your third-party relationships into a live, structured record, so teams never have to wonder if a relationship is actually working.
 
 External View is built for external affairs, government relations, and corporate impact teams who manage large portfolios of external organizations (advocacy partners, grantees, coalition members, and similar third parties) and need a single system of record for relationship performance, spend, and activity.
 
+Core capabilities: organization discovery (new and similar organizations, via name/EIN/affiliate matching), policy alignment scoring, spend and investment tracking, counterparty and competitive reports, event planning and engagement tracking, an AI Knowledge Assistant, and Deep Research for multi step AI research on a specific organization or question.
+
 ## Pages
 
-- [External View](https://externalview.ai/): Homepage. Explains the core platform — discovering and tracking external organizations, monitoring activity and spend, and surfacing blind spots in partner relationships.
-- [Inquiry Desk](https://externalview.ai/inquiry-desk.html): A module for investor relations and impact teams to capture ESG investor inquiries (including by forwarding emails), coordinate replies with clear ownership and deadlines, and report on inquiry volume and topic trends.
+- [External View](https://externalview.ai/): Homepage. Explains the platform, discovering and tracking external organizations, policy alignment, spend accountability, counterparty reports, event planning, and the AI Assistant and Deep Research features. Includes an FAQ section covering these topics directly.
+- [Inquiry Desk](https://externalview.ai/inquiry-desk.html): A module for investor relations and impact teams to capture ESG investor inquiries (including by forwarding emails), coordinate replies with clear ownership and deadlines, and report on inquiry volume and topic trends. Includes an FAQ section.
 
 ## Contact
 

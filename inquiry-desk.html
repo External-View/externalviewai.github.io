@@ -17,7 +17,7 @@
 <title>Inquiry Desk — External View</title>
 <meta name="description" content="Inquiry Desk by External View gives investor relations and impact teams a shared system to capture ESG investor inquiries, coordinate replies, and report on the issues shaping investor expectations.">
 <link rel="canonical" href="https://externalview.ai/inquiry-desk.html">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","name":"Inquiry Desk — External View","url":"https://externalview.ai/inquiry-desk.html","dateModified":"2026-09-24","isPartOf":{"@id":"https://externalview.ai/#organization"}},{"@type":"Organization","@id":"https://externalview.ai/#organization","name":"External View","url":"https://externalview.ai/","logo":"https://externalview.ai/logo.png","email":"hello@externalview.ai","description":"External View is the AI platform for third-party management — the intelligence layer for external affairs teams.","address":{"@type":"PostalAddress","streetAddress":"700 Pennsylvania Ave SE, Ste 200","addressLocality":"Washington","addressRegion":"DC","postalCode":"20003","addressCountry":"US"}},{"@type":"SoftwareApplication","name":"Inquiry Desk","url":"https://externalview.ai/inquiry-desk.html","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Inquiry Desk gives investor relations and impact teams a shared system to capture ESG investor inquiries, coordinate replies, and report on the issues shaping investor expectations.","provider":{"@id":"https://externalview.ai/#organization"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","name":"Inquiry Desk \u2014 External View","url":"https://externalview.ai/inquiry-desk.html","dateModified":"2026-09-24","isPartOf":{"@id":"https://externalview.ai/#organization"}},{"@type":"Organization","@id":"https://externalview.ai/#organization","name":"External View","url":"https://externalview.ai/","logo":"https://externalview.ai/logo.png","email":"hello@externalview.ai","description":"External View is the AI platform for third-party management, the intelligence layer for external affairs teams.","address":{"@type":"PostalAddress","streetAddress":"700 Pennsylvania Ave SE, Ste 200","addressLocality":"Washington","addressRegion":"DC","postalCode":"20003","addressCountry":"US"}},{"@type":"SoftwareApplication","name":"Inquiry Desk","url":"https://externalview.ai/inquiry-desk.html","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Inquiry Desk gives investor relations and impact teams a shared system to capture ESG investor inquiries, coordinate replies, and report on the issues shaping investor expectations.","provider":{"@id":"https://externalview.ai/#organization"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Inquiry Desk?","acceptedAnswer":{"@type":"Answer","text":"Inquiry Desk is a system for investor relations and impact teams to capture ESG investor inquiries, coordinate replies with a clear owner and deadline, and report on the volume and topics driving investor questions over time."}},{"@type":"Question","name":"How do inquiries get into Inquiry Desk?","acceptedAnswer":{"@type":"Answer","text":"Forward the investor email to Inquiry Desk. AI extracts the request, organization, contact, topics, and reply deadline, into a new inquiry for your team to review and assign."}},{"@type":"Question","name":"Does it replace our inbox?","acceptedAnswer":{"@type":"Answer","text":"It replaces the record, not the email itself. The inquiry lands against the organization's full history, tier, AUM, shareholder rank, past inquiries, calls, and meetings, instead of a message with no context."}},{"@type":"Question","name":"Can it tell us why an investor is asking?","acceptedAnswer":{"@type":"Answer","text":"Yes. The AI Knowledge Assistant gives a sourced view of what's likely driving a specific inquiry, so your reply can speak to the real concern, not just the literal question."}},{"@type":"Question","name":"What kind of reporting does it produce?","acceptedAnswer":{"@type":"Answer","text":"Inquiry status and volume, topic distribution by ESG theme, and monthly trend charts, exportable to PowerPoint or Excel for leadership."}},{"@type":"Question","name":"Who deploys and supports it?","acceptedAnswer":{"@type":"Answer","text":"Inquiry Desk includes concierge onboarding, SSO and mobile device management integration, and 24/7 global support for enterprise teams."}}]}]}</script>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="External View">
 <meta property="og:title" content="Inquiry Desk — External View">
@@ -281,6 +281,9 @@
     nav { padding: 0.75rem 1.25rem; }
     .nav-links { display: none; }
 
+    /* WIDE CONTENT (comparisons, FAQ) */
+    .wide-75, .faq-list { max-width: 100%; }
+
     /* HERO */
     .hero { padding: 7rem 1.5rem 3.5rem; }
     .hero-headline { font-size: clamp(2rem, 8vw, 3rem); }
@@ -415,6 +418,13 @@
   .id-pillar-icon { width: 40px; height: 40px; border-radius: 9px; background: rgba(62,105,139,0.09); color: var(--primary); display: flex; align-items: center; justify-content: center; margin-bottom: 1.1rem; }
   .id-pillar-title { font-size: 1.05rem; font-weight: 700; color: var(--secondary); margin-bottom: 0.45rem; }
   .id-pillar p { font-size: 0.9rem; line-height: 1.65; }
+  .id-pillar-grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+  .faq-list { display: flex; flex-direction: column; max-width: 75%; }
+  .wide-75 { max-width: 75%; }
+  .faq-item { border-bottom: 1px solid var(--border); padding: 1.5rem 0; }
+  .faq-item:first-child { border-top: 1px solid var(--border); }
+  .faq-q { font-weight: 600; font-size: 1rem; color: var(--secondary); margin-bottom: 0.5rem; }
+  .faq-a { font-size: 0.92rem; line-height: 1.7; color: var(--text-body); }
 
   .id-showcase { background: var(--ev-rhino); padding: 6rem 3.5rem 7rem; }
   .id-shots { display: flex; flex-direction: column; gap: 3.5rem; }
@@ -449,7 +459,7 @@
   .id-audience-grid p { font-family: Georgia, serif; font-style: italic; font-size: clamp(1.1rem, 1.8vw, 1.35rem); line-height: 1.55; color: var(--secondary); }
 
   @media (max-width: 900px) {
-    .id-pillar-grid, .id-steps-grid, .id-feature-grid, .id-audience-grid { grid-template-columns: 1fr; }
+    .id-pillar-grid, .id-pillar-grid-2, .id-steps-grid, .id-feature-grid, .id-audience-grid { grid-template-columns: 1fr; }
     .id-audience-grid { gap: 2.5rem; }
     .id-step, .id-step + .id-step { padding: 1.75rem 0; border-left: none; }
     .id-step + .id-step { border-top: 1px solid rgba(180,149,120,0.3); }
@@ -699,6 +709,34 @@
 </div>
 </section>
 
+<!-- MORE THAN AN INBOX -->
+<section class="id-pillars" id="more-than-email">
+<div class="id-pillars-head wide-75">
+<div class="section-label">More than an inbox</div>
+<h2 class="section-headline">Email is where it starts. <span class="hl">It's not where it ends.</span></h2>
+<p class="section-body wide-75">Forwarding an investor email into Inquiry Desk is the easy part. What makes it useful is everything that happens after: the inquiry lands against an organization you already have on file, tier, AUM, shareholder rank, every past call and meeting, not a blank ticket with no history.</p>
+</div>
+<div class="id-pillar-grid-2">
+<div class="id-pillar">
+<h3 class="id-pillar-title">No owner field</h3>
+<p>Your inbox has no owner field. Inquiry Desk assigns one the moment the email lands.</p>
+</div>
+<div class="id-pillar">
+<h3 class="id-pillar-title">No memory</h3>
+<p>Your inbox has no memory. Inquiry Desk shows the full relationship, past inquiries, calls, and meetings, against the organization, not buried in a thread.</p>
+</div>
+<div class="id-pillar">
+<h3 class="id-pillar-title">No context on why</h3>
+<p>Your inbox can't tell you why an investor is really asking. The AI Knowledge Assistant gives you a sourced view of what's likely driving the question before you reply.</p>
+</div>
+<div class="id-pillar">
+<h3 class="id-pillar-title">No trends</h3>
+<p>Your inbox can't tell you climate transition questions are up 40% this quarter. Inquiry Desk turns every inquiry into a reportable trend, exportable straight to your leadership deck.</p>
+</div>
+</div>
+<p class="section-body wide-75" style="margin-top:2rem;">Investor questions deserve a system that knows the relationship, not a folder that only knows the message.</p>
+</section>
+
 <!-- FEATURES -->
 <section class="id-features">
 <div class="id-feature-grid">
@@ -732,6 +770,40 @@
 </div>
 </div>
 </div>
+
+<!-- FAQ -->
+<section class="id-pillars" id="faq" style="background: white;">
+<div class="id-pillars-head wide-75">
+<div class="section-label">Frequently asked</div>
+<h2 class="section-headline">Questions, answered.</h2>
+</div>
+<div class="faq-list">
+<div class="faq-item">
+<div class="faq-q">What is Inquiry Desk?</div>
+<p class="faq-a">Inquiry Desk is a system for investor relations and impact teams to capture ESG investor inquiries, coordinate replies with a clear owner and deadline, and report on the volume and topics driving investor questions over time.</p>
+</div>
+<div class="faq-item">
+<div class="faq-q">How do inquiries get into Inquiry Desk?</div>
+<p class="faq-a">Forward the investor email to Inquiry Desk. AI extracts the request, organization, contact, topics, and reply deadline, into a new inquiry for your team to review and assign.</p>
+</div>
+<div class="faq-item">
+<div class="faq-q">Does it replace our inbox?</div>
+<p class="faq-a">It replaces the record, not the email itself. The inquiry lands against the organization's full history, tier, AUM, shareholder rank, past inquiries, calls, and meetings, instead of a message with no context.</p>
+</div>
+<div class="faq-item">
+<div class="faq-q">Can it tell us why an investor is asking?</div>
+<p class="faq-a">Yes. The AI Knowledge Assistant gives a sourced view of what's likely driving a specific inquiry, so your reply can speak to the real concern, not just the literal question.</p>
+</div>
+<div class="faq-item">
+<div class="faq-q">What kind of reporting does it produce?</div>
+<p class="faq-a">Inquiry status and volume, topic distribution by ESG theme, and monthly trend charts, exportable to PowerPoint or Excel for leadership.</p>
+</div>
+<div class="faq-item">
+<div class="faq-q">Who deploys and supports it?</div>
+<p class="faq-a">Inquiry Desk includes concierge onboarding, SSO and mobile device management integration, and 24/7 global support for enterprise teams.</p>
+</div>
+</div>
+</section>
 
 <!-- CTA -->
 <section class="cta" id="contact">
