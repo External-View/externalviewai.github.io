@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>We'll be right back — External View</title>
+<link rel="icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ev-ming: #3e698b;
+    --ev-gulf-stream: #7bb5ae;
+    --ev-rhino: #354668;
+    --ev-santa-fe: #b87746;
+    --ev-taupe: #f8f7f3;
+    --ev-nomad: #b5a89b;
+    --text-body: #4a5568;
+  }
+  html, body { height: 100%; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: linear-gradient(160deg, var(--ev-taupe) 0%, #f0eeeb 60%, #e8ebe8 100%);
+    color: var(--text-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  body::before {
+    content: '';
+    position: absolute;
+    top: -10%; right: -5%;
+    width: 600px; height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(123,181,174,0.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  body::after {
+    content: '';
+    position: absolute;
+    bottom: -15%; left: -8%;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(184,119,70,0.10) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .card {
+    position: relative;
+    z-index: 1;
+    max-width: 560px;
+    text-align: center;
+  }
+  .logo { height: 64px; width: auto; margin-bottom: 2.5rem; }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(62,105,139,0.08);
+    border: 1px solid rgba(62,105,139,0.18);
+    color: var(--ev-ming);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.4rem 0.95rem;
+    border-radius: 20px;
+    margin-bottom: 1.75rem;
+  }
+  .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--ev-gulf-stream);
+    animation: pulse 1.8s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.3); }
+  }
+  h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: var(--ev-rhino);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.25rem;
+  }
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+  }
+  .muted {
+    color: var(--ev-nomad);
+    font-size: 0.95rem;
+    margin-top: 2rem;
+  }
+  a {
+    color: var(--ev-ming);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(62,105,139,0.3);
+    transition: border-color 0.2s;
+  }
+  a:hover { border-bottom-color: var(--ev-ming); }
+</style>
+</head>
+<body>
+  <main class="card">
+    <img src="logo.png" alt="External View" class="logo">
+    <div class="eyebrow"><span class="dot"></span>Scheduled maintenance</div>
+    <h1>We'll be right back.</h1>
+    <p>External View is undergoing brief maintenance to bring you improvements.</p>
+    <p>Thank you for your patience.</p>
+    <p class="muted">Questions? Reach us at <a href="mailto:hello@externalview.ai">hello@externalview.ai</a></p>
+  </main>
+</body>
+</html>

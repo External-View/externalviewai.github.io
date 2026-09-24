@@ -1,0 +1,16 @@
+# External View
+
+> External View is the AI platform for third-party management — the intelligence layer for external affairs teams. It helps organizations track partner performance, spend accountability, and organization relationships in one place, so teams never have to wonder if a third-party relationship is delivering results.
+
+External View is built for external affairs, government relations, and corporate impact teams who manage large portfolios of external organizations (advocacy partners, grantees, coalition members, and similar third parties) and need a single system of record for relationship performance, spend, and activity.
+
+## Pages
+
+- [External View](https://externalview.ai/): Homepage. Explains the core platform — discovering and tracking external organizations, monitoring activity and spend, and surfacing blind spots in partner relationships.
+- [Inquiry Desk](https://externalview.ai/inquiry-desk.html): A module for investor relations and impact teams to capture ESG investor inquiries (including by forwarding emails), coordinate replies with clear ownership and deadlines, and report on inquiry volume and topic trends.
+
+## Contact
+
+- Email: hello@externalview.ai
+- Demo requests: https://calendly.com/demo-externalview
+- Client login: https://app.externalview.ai
