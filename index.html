@@ -58,23 +58,22 @@
   .nav-login:hover { background: rgba(184,119,70,0.08) !important; }
 
   /* HERO */
-  .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 9rem 3.5rem 5rem; position: relative; overflow: hidden; background: linear-gradient(160deg, var(--ev-taupe) 0%, #f0eeeb 60%, #e8ebe8 100%); }
-  .hero::before { content: ''; position: absolute; top: -10%; right: -5%; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(123,181,174,0.12) 0%, transparent 70%); pointer-events: none; }
+  .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 9rem 3.5rem 5rem; position: relative; overflow: hidden; background: linear-gradient(100deg, rgba(8,10,14,0.48) 0%, rgba(8,10,14,0.3) 45%, rgba(8,10,14,0.08) 100%), url('nyc.png') center 38% / cover no-repeat; }
   .hero-content { position: relative; z-index: 1; max-width: 780px; }
   .hero-eyebrow { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(62,105,139,0.08); border: 1px solid rgba(62,105,139,0.18); color: var(--primary); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.35rem 0.9rem; border-radius: 20px; margin-bottom: 1.75rem; }
   .hero-eyebrow-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
-  .hero-headline { font-size: clamp(2.2rem, 3.8vw, 3.6rem); font-weight: 700; line-height: 1.12; color: var(--secondary); margin-bottom: 1.25rem; letter-spacing: -0.02em; max-width: 620px; }
-  .hero-headline .hl { color: var(--primary); }
-  .hero-tagline { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ev-cutty-sark); margin-bottom: 1.5rem; }
-  .hero-sub { font-size: 1.1rem; color: var(--text-body); line-height: 1.75; margin-bottom: 2.5rem; max-width: 600px; }
+  .hero-headline { font-size: clamp(2.2rem, 3.8vw, 3.6rem); font-weight: 700; line-height: 1.12; color: #fff; margin-bottom: 1.25rem; letter-spacing: -0.02em; max-width: 620px; }
+  .hero-headline .hl { color: var(--ev-raw-sienna); }
+  .hero-tagline { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.75); margin-bottom: 1.5rem; }
+  .hero-sub { font-size: 1.1rem; color: rgba(255,255,255,0.85); line-height: 1.75; margin-bottom: 2.5rem; max-width: 600px; }
   .hero-actions { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 4rem; }
   .btn-primary { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--primary); color: white; text-decoration: none; font-size: 0.9rem; font-weight: 600; padding: 0.85rem 1.75rem; border-radius: 8px; border: none; cursor: pointer; transition: all 0.2s; }
   .btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(62,105,139,0.25); }
   .btn-secondary { display: inline-flex; align-items: center; gap: 0.4rem; background: transparent; color: var(--primary); text-decoration: none; font-size: 0.9rem; font-weight: 600; padding: 0.85rem 1.75rem; border-radius: 8px; border: 1.5px solid var(--primary); cursor: pointer; transition: all 0.2s; }
   .btn-secondary:hover { background: rgba(62,105,139,0.06); }
-  .hero-stats { display: flex; flex-wrap: nowrap; gap: 0; padding-top: 2.5rem; border-top: 1px solid rgba(180,149,120,0.35); align-items: flex-start; width: 100%; max-width: 860px; } .hero-stat-divider { width: 1px; background: rgba(180,149,120,0.3); align-self: stretch; margin: 0 2rem; } .hero-stat { flex-shrink: 0; }
-  .hero-stat-num { font-size: 1.5rem; font-weight: 700; color: var(--primary); line-height: 1; margin-bottom: 0.2rem; white-space: nowrap; }
-  .hero-stat-label { font-size: 0.72rem; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; }
+  .hero-stats { display: flex; flex-wrap: nowrap; gap: 0; padding-top: 2.5rem; border-top: 1px solid rgba(255,255,255,0.22); align-items: flex-start; width: 100%; max-width: 860px; } .hero-stat-divider { width: 1px; background: rgba(255,255,255,0.22); align-self: stretch; margin: 0 2rem; } .hero-stat { flex-shrink: 0; }
+  .hero-stat-num { font-size: 1.5rem; font-weight: 700; color: #fff; line-height: 1; margin-bottom: 0.2rem; white-space: nowrap; }
+  .hero-stat-label { font-size: 0.72rem; font-weight: 500; color: rgba(255,255,255,0.65); text-transform: uppercase; letter-spacing: 0.08em; }
 
   /* SHARED */
   section { padding: 6rem 3.5rem; }
